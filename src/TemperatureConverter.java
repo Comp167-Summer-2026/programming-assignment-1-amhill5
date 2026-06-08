@@ -6,7 +6,8 @@ public class TemperatureConverter {
     public static double convertTemperature(double temperature, String unit) {
         if (unit.equalsIgnoreCase("C")) {
             return (temperature * 9.0 / 5.0) + 32.0;
-        } else if (unit.equalsIgnoreCase("F")) {
+        }
+        else if (unit.equalsIgnoreCase("F")) {
             return (temperature - 32.0) * 5.0 / 9.0;
         }
         return temperature;
